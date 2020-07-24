@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="myApp">
+<html ng-app="myApp" ng-controller="MyCtrl">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,17 +10,23 @@
 </head>
 <body>
 
-<ul>
-    <img src="images/LogoMakr_4gUunU.png" class="logo" href="#/"></img>
-    <li><a href="#/login">Login</a></li>
-    <li><a class="fa fa-home" href="#/"></a></li>
-    
-    <!-- <li><a href="#contact">Contact</a></li> -->
-    <!-- <li><a href="#/about">About</a></li> -->
-  </ul>
-
-<div ng-view></div>
-
+    <!-- Navigation Bar -->
+    <ul id="navbar">
+        <img src="images/LogoMakr_4gUunU.png" class="logo" href="#/"></img>
+        <li><a href="#/login">Login</a></li>
+        <li><a class="fa fa-home" href="#/" ng-click="firstPage()"></a></li>
+        
+        <!-- Search Bar -->
+        <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="File, Movie, Author...">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+         </div>
+    </ul>
+    <div ng-view></div>
 <script src="app.js"></script>
 </body>
 </html>
