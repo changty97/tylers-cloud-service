@@ -8,7 +8,23 @@
   
           <input type="text" name="username" placeholder="Username" required>
           <input type="password" name="password" placeholder="Password" required>
-          <input type="submit" value="Login">
+          <input type="submit" value="Login" ng-click="SetCookies()">
+          Username: 
+            <input type="text" 
+                   ng-model="username" /> 
+            <br /> 
+            <br /> 
+            <input type="button"
+                   value="Set Cookies"
+                   ng-click="SetCookies()" /> 
+  
+            <input type="button" 
+                   value="Get Cookies" 
+                   ng-click="GetCookies()" /> 
+  
+            <input type="button" 
+                   value="Clear Cookies"
+                   ng-click="ClearCookies()" /> 
         </div>
         
       </div>
