@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="myApp" ng-controller="MyCtrl">
+<html ng-app="myApp">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -7,14 +7,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-cookies.js"></script> 
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <ul id="navbar">
-        <img src="images/LogoMakr_4gUunU.png" class="logo" href="#/"></img>
+        <a href="#/"><img src="images/LogoMakr_4gUunU.png" class="logo"></img></a>
         <li><a href="#/login">Login</a></li>
-        <li><a class="fa fa-home" href="#/" ng-click="firstPage()"></a></li>
         
         <!-- Search Bar -->
         <div class="wrap">

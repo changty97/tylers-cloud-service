@@ -1,6 +1,6 @@
 .center {
     margin: auto;
-    width: 60%;
+    /* width: 60%; */
   }
 
 ul {
@@ -110,9 +110,19 @@ input[type=submit] {
   
   .main_button {
     font-family: sans-serif;
-    font-size: 36px;
-    height: 150px;
-    width: 30%;
+    margin: 10px 0 0 20px;
+    /* font-size: 36px; 
+    height: 550px; 
+    width: 30%; */
+  }
+
+  .btn_movie {
+    width: 350px;
+  }
+
+  .movie_cover {
+    height: 550px;
+    width: 100%;
   }
 
   .searchButton {
